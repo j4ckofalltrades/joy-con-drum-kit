@@ -1,0 +1,61 @@
+{
+  "name": "joy-con-drum-kit",
+  "version": "1.0.0",
+  "description": "Joy-Con Drum Kit",
+  "scripts": {
+    "build": "parcel build src/index.html --public-url ./ --no-source-maps",
+    "start": "parcel src/index.html --open",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jordan Duabe @j4ckofalltrades <me@jduabe.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "joy-con-webhid": "^0.7.0",
+    "lint-staged": "^14.0.1",
+    "parcel": "^2.9.3",
+    "prettier": "^3.0.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.{html,css,js}": [
+      "prettier --write src"
+    ]
+  }
+}
