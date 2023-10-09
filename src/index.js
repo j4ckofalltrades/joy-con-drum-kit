@@ -111,9 +111,6 @@ const controlsModal = document.getElementById("controls")
 const controlsModalBtn = document.getElementById("btn-controls")
 controlsModalBtn.onclick = () => (controlsModal.style.display = "block")
 
-const closeBtn = document.getElementsByClassName("close")[0]
-closeBtn.onclick = () => (controlsModal.style.display = "none")
-
 window.onclick = (event) => {
   if (event.target === controlsModal) {
     controlsModal.style.display = "none"
