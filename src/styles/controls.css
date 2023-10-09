@@ -13,12 +13,6 @@
   animation-duration: 0.4s;
 }
 
-.modal-header {
-  padding: 8px 12px;
-  background-color: #212121;
-  color: #fefefe;
-}
-
 .modal-body {
   color: #000;
 }
@@ -31,20 +25,6 @@
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s;
-}
-
-.close {
-  color: #fff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #ff493e;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 @-webkit-keyframes slideIn {

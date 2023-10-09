@@ -1,6 +1,6 @@
 # Joy-Con Drum Kit
 
-A simple web app that uses `Joy-Con`s as drum kit controllers (connected via [WebHID](https://web.dev/hid)).
+A drum kit web app that uses Nintendo Joy-Cons as controllers (connected via [WebHID](https://web.dev/hid)).
 
 > [!NOTE]
 > WebHID is currently only supported on Chromium-based browsers e.g. Chrome, Edge, etc.
@@ -8,6 +8,8 @@ A simple web app that uses `Joy-Con`s as drum kit controllers (connected via [We
 ## Demo
 
 ![demo](assets/joy-con-drum-kit.png)
+
+[![Joy-Con Drum Kit Demo](https://img.youtube.com/vi/pzw6PiM772w/maxresdefault.jpg)](https://www.youtube.com/watch?v=pzw6PiM772w)
 
 ## Pre-requisites
 
@@ -34,15 +36,10 @@ If you are running __Linux__, you need to perform the following steps.
 
 ## Quickstart
 
-Launch the app locally with `pnpm run start`.
+Launch the app locally with `pnpm install --frozen-lockfile` and `pnpm run start`.
 
 ## Attribution
 
 - [Joy-Con WebHID](https://github.com/tomayac/joy-con-webhid) Driver
 - Joy-Con models by [Stix](https://codepen.io/stix/details/WRoweX#input_1604658346501:~:text=License)
 - Icons by [Icons8](https://icons8.com)
-
-### TODO
-
-- [ ] Configure CI/CD with GitHub actions
-- [ ] Deploy app
