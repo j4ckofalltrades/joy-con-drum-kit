@@ -34,7 +34,7 @@ If you are running __Linux__, you need to perform the following steps.
 
 ## Quickstart
 
-Launch the app locally with `npm run dev`.
+Launch the app locally with `pnpm run start`.
 
 ## Attribution
 

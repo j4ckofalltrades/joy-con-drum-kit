@@ -1,15 +1,15 @@
-import { connectJoyCon, connectedJoyCons, JoyConLeft, JoyConRight, GeneralController } from "joy-con-webhid"
+import { connectedJoyCons, connectJoyCon, JoyConLeft, JoyConRight } from "joy-con-webhid"
 
 // Connect Joy-Cons via WebHID
 const connectButton = document.querySelector("#connect-joy-cons")
 connectButton.addEventListener("click", connectJoyCon)
 
-const animateButton = (id, condition) => {
-  document.querySelector(id).classList.toggle("highlight", condition)
-}
+const animateButton = (id, condition) => document.querySelector(id).classList.toggle("highlight", condition)
 
 const playSound = (key) => {
-  if (!key) return
+  if (!key) {
+    return
+  }
   const audioElement = document.querySelector(`audio[data-key="${key}"]`)
   audioElement.play()
 }
@@ -20,7 +20,7 @@ const visualize = (joyCon, packet) => {
   }
   const { buttonStatus: buttons } = packet
 
-  if (joyCon instanceof JoyConLeft || joyCon instanceof GeneralController) {
+  if (joyCon instanceof JoyConLeft) {
     animateButton("#up", buttons.up)
     animateButton("#down", buttons.down)
     animateButton("#left", buttons.left)
@@ -55,7 +55,7 @@ const visualize = (joyCon, packet) => {
     }
   }
 
-  if (joyCon instanceof JoyConRight || joyCon instanceof GeneralController) {
+  if (joyCon instanceof JoyConRight) {
     animateButton("#a", buttons.a)
     animateButton("#b", buttons.b)
     animateButton("#x", buttons.x)
@@ -107,16 +107,12 @@ setInterval(async () => {
 
 // Controls modal
 const controlsModal = document.getElementById("controls")
+
 const controlsModalBtn = document.getElementById("btn-controls")
+controlsModalBtn.onclick = () => (controlsModal.style.display = "block")
+
 const closeBtn = document.getElementsByClassName("close")[0]
-
-controlsModalBtn.onclick = function () {
-  controlsModal.style.display = "block"
-}
-
-closeBtn.onclick = () => {
-  controlsModal.style.display = "none"
-}
+closeBtn.onclick = () => (controlsModal.style.display = "none")
 
 window.onclick = (event) => {
   if (event.target === controlsModal) {

@@ -4,7 +4,7 @@
   "description": "Joy-Con Drum Kit",
   "scripts": {
     "build": "parcel build src/index.html --public-url ./ --no-source-maps",
-    "start": "parcel src/index.html --open",
+    "start": "parcel src/index.html --open chrome",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +29,10 @@
       "eslint:recommended",
       "prettier"
     ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2017
+    },
     "rules": {
       "indent": [
         "error",
