@@ -7,7 +7,11 @@ A drum kit web app that uses Nintendo Joy-Cons as controllers (connected via [We
 
 ## Demo
 
+Check out the live demo of the web app [here](https://j4ckofalltrades.github.io/joy-con-drum-kit/).
+
 ![demo](assets/joy-con-drum-kit.png)
+
+You can also view a demo recording by clicking on the video below:
 
 [![Joy-Con Drum Kit Demo](https://img.youtube.com/vi/pzw6PiM772w/maxresdefault.jpg)](https://www.youtube.com/watch?v=pzw6PiM772w)
 
