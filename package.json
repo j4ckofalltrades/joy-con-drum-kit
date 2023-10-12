@@ -58,6 +58,9 @@
     "trailingComma": "all"
   },
   "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix src"
+    ],
     "*.{html,css,js}": [
       "prettier --write src"
     ]

@@ -2,14 +2,14 @@
 
 A drum kit web app that uses Nintendo Joy-Cons as controllers (connected via [WebHID](https://web.dev/hid)).
 
-> [!NOTE]
+> [!IMPORTANT]
 > WebHID is currently only supported on Chromium-based browsers e.g. Chrome, Edge, etc.
 
 ## Demo
 
-Check out the live demo of the web app [here](https://j4ckofalltrades.github.io/joy-con-drum-kit/).
+Check out the live demo of the app [here](https://j4ckofalltrades.github.io/joy-con-drum-kit/).
 
-![demo](assets/joy-con-drum-kit.png)
+![demo](assets/img/joy-con-drum-kit.png)
 
 You can also view a demo recording by clicking on the video below:
 
@@ -27,13 +27,6 @@ If you are running __Linux__, you need to perform the following steps.
 
     # Switch Joy-con (R) (Bluetooth only)
     KERNEL=="hidraw*", SUBSYSTEM=="hidraw", KERNELS=="0005:057E:2007.*", MODE="0666"
-
-    # Switch Pro controller (USB and Bluetooth)
-    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="2009", MODE="0666"
-    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", KERNELS=="0005:057E:2009.*", MODE="0666"
-
-    # Switch Joy-con charging grip (USB only)
-    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="200e", MODE="0666"
     ```
 
 2. Reload `udev` rules using `sudo udevadm control --reload-rules`
