@@ -6,6 +6,7 @@
     "build": "parcel build src/index.html --public-url ./ --no-source-maps",
     "start": "parcel src/index.html --open chrome",
     "prepare": "husky install",
+    "lint": "eslint --cache src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
