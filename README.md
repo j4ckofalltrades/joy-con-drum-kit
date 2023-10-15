@@ -3,7 +3,7 @@
 A drum kit web app that uses Nintendo Joy-Cons as controllers (connected via [WebHID](https://web.dev/hid)).
 
 > [!IMPORTANT]
-> WebHID is currently only supported on Chromium-based browsers e.g. Chrome, Edge, etc.
+> The WebHID API is currently only supported on [Chromium-based browsers](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API#browser_compatibility) e.g. Chrome, Edge, etc.
 
 ## Demo
 

@@ -108,3 +108,7 @@ figure {
 ol {
   line-height: 180%;
 }
+
+.instructions {
+  width: 127px;
+}

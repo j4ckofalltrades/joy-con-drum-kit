@@ -107,12 +107,19 @@ setInterval(async () => {
 
 // Controls modal
 const controlsModal = document.getElementById("controls")
+const toggleControls = () => {
+  if (!controlsModal.style.display || controlsModal.style.display === "none") {
+    controlsModal.style.display = "block"
+  } else {
+    controlsModal.style.display = "none"
+  }
+}
 
 const controlsModalBtn = document.getElementById("btn-controls")
-controlsModalBtn.onclick = () => (controlsModal.style.display = "block")
-
 window.onclick = (event) => {
   if (event.target === controlsModal) {
     controlsModal.style.display = "none"
   }
 }
+
+controlsModalBtn.onclick = toggleControls
