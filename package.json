@@ -21,6 +21,10 @@
     "parcel": "^2.15.2",
     "prettier": "^3.5.3"
   },
+  "overrides": {
+    "micromatch": "^4.0.8",
+    "braces": "^3.0.3"
+  },
   "prettier": {
     "printWidth": 120,
     "semi": false,
