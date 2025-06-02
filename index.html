@@ -1,1 +1,125 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Joy-Con Drum Kit</title><link rel="icon" type="image/x-icon" href="favicon.373418fa.ico"><link rel="stylesheet" href="index.416daff8.css"><link rel="stylesheet" href="index.8923560d.css"><link rel="stylesheet" href="index.35c8e4f8.css"><script src="index.0b757fb0.js" type="module"></script></head><body> <h1> <img src="joy-cons.6750faa8.png" alt="Stencil drawing of Nintendo Joy Controllers"> Joy-Con Drum Kit <img src="drums.7e778ffe.png" alt="Stencil drawing of a bass drum and a drum stick"> </h1> <ol> <li> Connect the <a href="https://en.wikipedia.org/wiki/Joy-Con" target="_blank" rel="noreferrer"> Joy-Cons </a> via the operating system's Bluetooth setup dialog </li> <li> Click the button below to connect the Joy-Cons via the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API" target="_blank" rel="noreferrer"> WebHID API </a> <div> <button id="connect-joy-cons" class="instructions" type="button">Connect Joy-Cons</button> </div> </li> <li> Click the button below to toggle the drum kit controls <div> <button id="btn-controls" class="instructions" type="button">Toggle Controls</button> </div> </li> </ol> <figure> <div id="joycon-l" class="joycon productId8198"> <div id="joystick-left" class="joystick"></div> <div class="buttons"> <button id="up"></button> <button id="left"></button> <button id="down"></button> <button id="right"></button> </div> <span id="minus"></span> <i id="capture"></i> <strong class="back-buttons" id="l"></strong> </div> <div id="joycon-r" class="joycon productId8199"> <div id="joystick-right" class="joystick"></div> <div class="buttons"> <button id="x"></button> <button id="y"></button> <button id="b"></button> <button id="a"></button> </div> <span id="plus"></span> <i id="home"></i> <strong class="back-buttons" id="r"></strong> </div> </figure> <div id="controls" class="modal"> <div class="modal-content"> <div class="modal-body"> <div class="row"> <div class="column left-joycon-ctrl"> <p><i class="arrow up"></i>&nbsp;&nbsp;Crash</p> <p><i class="arrow left"></i>&nbsp;&nbsp;Hi-Hat</p> <p><i class="arrow down"></i>&nbsp;&nbsp;Snare</p> <p><i class="arrow right"></i>&nbsp;&nbsp;Hi-Hat (Open)</p> <p> <button class="btn-rect button">L</button> &nbsp;&nbsp;Clap </p> <p> <button class="btn-rect button">ZL</button> &nbsp;&nbsp;Bass </p> </div> <div class="column right-joycon-ctrl"> <p> <button class="btn-round button">X</button> &nbsp;&nbsp;Ride </p> <p> <button class="btn-round button">Y</button> &nbsp;&nbsp;Tom-Tom (Small) </p> <p> <button class="btn-round button">A</button> &nbsp;&nbsp;Tom-Tom (Large) </p> <p> <button class="btn-round button">B</button> &nbsp;&nbsp;Floor Tom </p> <p> <button class="btn-rect button">R</button> &nbsp;&nbsp;Tink </p> <p> <button class="btn-rect button">ZR</button> &nbsp;&nbsp;Bass </p> </div> </div> </div> </div> </div>  <audio data-key="crash" src="crash.13475f0b.wav"></audio> <audio data-key="snare" src="snare.0b3695af.wav"></audio> <audio data-key="hi-hat" src="hi-hat.e3a3d13b.wav"></audio> <audio data-key="hi-hat-open" src="hi-hat-open.f96d61fb.wav"></audio> <audio data-key="bass" src="kick.90695c84.wav"></audio> <audio data-key="ride" src="ride.f36e9b33.wav"></audio> <audio data-key="tom-s" src="tom-s.62526768.wav"></audio> <audio data-key="tom-l" src="tom-l.28b80d37.wav"></audio> <audio data-key="tom-f" src="floortom.45a8e812.wav"></audio> <audio data-key="clap" src="clap.4df397f5.wav"></audio> <audio data-key="tink" src="tink.2b2cdf40.wav"></audio> <footer> Joy-Con models via <a href="https://codepen.io/stix/details/WRoweX#input_1604658346501:~:text=License">Stix</a> on CodePen. </footer> </body></html>
+<!DOCTYPE html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><title>Joy-Con Drum Kit</title><link rel=icon type=image/x-icon href=favicon.373418fa.ico><link rel=stylesheet href=joy-con-drum-kit.002be5a8.css><link rel=stylesheet href=joy-con-drum-kit.8923560d.css><link rel=stylesheet href=joy-con-drum-kit.35c8e4f8.css><script src=joy-con-drum-kit.49812d36.js type=module></script><body>
+    <h1>
+      <img src=joy-cons.141382fd.png alt="Stencil drawing of Nintendo Joy Controllers">
+      Joy-Con Drum Kit
+      <img src=drums.f9e4831b.png alt="Stencil drawing of a bass drum and a drum stick">
+    </h1>
+    <ol>
+      <li>
+        Connect the
+        <a href=https://en.wikipedia.org/wiki/Joy-Con target=_blank rel=noreferrer> Joy-Cons </a>
+        via the operating system's Bluetooth setup dialog
+      </li>
+      <li>
+        Click the button below to connect the Joy-Cons via the
+        <a href=https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API target=_blank rel=noreferrer>
+          WebHID API
+        </a>
+        <div>
+          <button id=connect-joy-cons class=instructions type=button>Connect Joy-Cons</button>
+        </div>
+      </li>
+      <li>
+        Click the button below to toggle the drum kit controls
+        <div>
+          <button id=btn-controls class=instructions type=button>Toggle Controls</button>
+        </div>
+      </li>
+    </ol>
+
+    <figure>
+      <div id=joycon-l class="joycon productId8198">
+        <div id=joystick-left class=joystick></div>
+        <div class=buttons>
+          <button id=up></button>
+          <button id=left></button>
+          <button id=down></button>
+          <button id=right></button>
+        </div>
+        <span id=minus></span>
+        <i id=capture></i>
+        <strong class=back-buttons id=l></strong>
+      </div>
+      <div id=joycon-r class="joycon productId8199">
+        <div id=joystick-right class=joystick></div>
+        <div class=buttons>
+          <button id=x></button>
+          <button id=y></button>
+          <button id=b></button>
+          <button id=a></button>
+        </div>
+        <span id=plus></span>
+        <i id=home></i>
+        <strong class=back-buttons id=r></strong>
+      </div>
+    </figure>
+
+    <div id=controls class=modal>
+      <div class=modal-content>
+        <div class=modal-body>
+          <div class=row>
+            <div class="column left-joycon-ctrl">
+              <p><i class="arrow up"></i>&nbsp;&nbsp;Crash</p>
+              <p><i class="arrow left"></i>&nbsp;&nbsp;Hi-Hat</p>
+              <p><i class="arrow down"></i>&nbsp;&nbsp;Snare</p>
+              <p><i class="arrow right"></i>&nbsp;&nbsp;Hi-Hat (Open)</p>
+              <p>
+                <button class="btn-rect button">L</button>
+                &nbsp;&nbsp;Clap
+              </p>
+              <p>
+                <button class="btn-rect button">ZL</button>
+                &nbsp;&nbsp;Bass
+              </p>
+            </div>
+            <div class="column right-joycon-ctrl">
+              <p>
+                <button class="btn-round button">X</button>
+                &nbsp;&nbsp;Ride
+              </p>
+              <p>
+                <button class="btn-round button">Y</button>
+                &nbsp;&nbsp;Tom-Tom (Small)
+              </p>
+              <p>
+                <button class="btn-round button">A</button>
+                &nbsp;&nbsp;Tom-Tom (Large)
+              </p>
+              <p>
+                <button class="btn-round button">B</button>
+                &nbsp;&nbsp;Floor Tom
+              </p>
+              <p>
+                <button class="btn-rect button">R</button>
+                &nbsp;&nbsp;Tink
+              </p>
+              <p>
+                <button class="btn-rect button">ZR</button>
+                &nbsp;&nbsp;Bass
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <audio data-key=crash src=crash.13475f0b.wav></audio>
+    <audio data-key=snare src=snare.0b3695af.wav></audio>
+    <audio data-key=hi-hat src=hi-hat.e3a3d13b.wav></audio>
+    <audio data-key=hi-hat-open src=hi-hat-open.f96d61fb.wav></audio>
+    <audio data-key=bass src=kick.90695c84.wav></audio>
+    <audio data-key=ride src=ride.f36e9b33.wav></audio>
+    <audio data-key=tom-s src=tom-s.62526768.wav></audio>
+    <audio data-key=tom-l src=tom-l.28b80d37.wav></audio>
+    <audio data-key=tom-f src=floortom.45a8e812.wav></audio>
+    <audio data-key=clap src=clap.4df397f5.wav></audio>
+    <audio data-key=tink src=tink.2b2cdf40.wav></audio>
+
+    <footer>
+      Joy-Con models via
+      <a href="https://codepen.io/stix/details/WRoweX#input_1604658346501:~:text=License">Stix</a>
+      on CodePen.
+    </footer>
+  
+
