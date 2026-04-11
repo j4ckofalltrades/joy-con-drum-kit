@@ -29,7 +29,8 @@
   },
   "pnpm": {
     "overrides": {
-      "minimatch": "^10.2.3"
+      "minimatch": "^10.2.3",
+      "picomatch": "^2.3.2"
     }
   },
   "prettier": {
